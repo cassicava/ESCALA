@@ -25,8 +25,8 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: rgb(255, 243, 227);
-    background: linear-gradient(135deg, rgba(255, 243, 227, 1) 0%, rgba(226, 226, 255, 1) 100%);
+    background: rgb(254,255,227);
+    background: linear-gradient(135deg, rgba(254,255,227,1) 0%, rgba(226,226,255,1) 100%);
 }
 
 /* ------------------- */
@@ -109,10 +109,12 @@ button:active {
 
 .entrar {
     background-color: #cacafc;
+    color: black;
 }
 
 .registrar {
     background-color: #faecd2;
+    color: black;
 }
 
 .botao:hover {
@@ -133,6 +135,7 @@ button:active {
     font-size: 1em;
 }
 
+/* ------------------- */
 
 /* (350px para baixo) */
 @media only screen and (max-width: 350px)
@@ -141,7 +144,6 @@ button:active {
         width: 90%;
     }
 }
-
 
 /* (600px para baixo) */
 @media only screen and (max-width: 600px)
