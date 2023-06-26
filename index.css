@@ -6,16 +6,13 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Helvetica, Arial, sans-serif;
-
-    /* border: 1px solid red; */
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
     transition: 0.5s;
-
-    /* height: -webkit-fill-available; */
+    height: 100%;
 }
 
 body {
@@ -24,36 +21,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    height: -webkit-fill-available;
-
-    background: rgb(254,255,227);
-    background: linear-gradient(135deg, rgba(254,255,227,1) 0%, rgba(226,226,255,1) 100%);
+    background: linear-gradient(135deg, rgba(254, 255, 227, 1) 0%, rgba(226, 226, 255, 1) 100%);
 }
-
-/* ------------------- */
 
 form {
     width: 40%;
+    max-width: 500px;
     height: auto;
-
     padding: 20px;
-
     background-color: #fefefe;
-
     border-radius: 5px;
 }
 
 .campos {
     display: flex;
     flex-direction: column;
-
     padding: 10px;
 }
 
-/* ------------------- */
-
-h1{
+h1 {
     font-size: 2em;
     text-align: center;
     padding: 15px 0px 40px 0px;
@@ -61,24 +47,16 @@ h1{
 
 label {
     font-size: 1.2em;
-
-    padding: 5px 5px;
+    padding: 5px 0;
 }
 
 input {
     font-size: 1.2em;
-
-    padding: 5px 5px;
-
+    padding: 5px;
     border: none;
     border-bottom: 1px solid;
-}
-
-input:focus {
     outline: none;
 }
-
-/* ------------------- */
 
 button {
     cursor: pointer;
@@ -90,22 +68,17 @@ button:active {
 
 .campo_botoes {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 10px;
 }
 
 .botao {
-    width: -webkit-fill-available;
+    width: 100%;
     height: auto;
-
     margin: 5px;
     padding: 10px;
-
     font-size: 1em;
-
     border: none;
-
     border: 2px solid transparent;
 }
 
@@ -113,14 +86,12 @@ button:active {
     background-color: #cacafc;
     color: black;
     font-size: 1em;
-    font-style: none;
 }
 
 .registrar {
     background-color: #faecd2;
     color: black;
     font-size: 1em;
-    font-style: none;
 }
 
 .botao:hover {
@@ -129,33 +100,30 @@ button:active {
 
 .esqueceu {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .esqueceu_botao {
     background: transparent;
     color: #3c70b6;
     border: none;
-
     padding: 5px;
     font-size: 1em;
 }
 
-/* ------------------- */
+.esqueceu_botao:hover{
+    text-decoration: underline;
+}
 
-/* (350px para baixo) */
-@media only screen and (max-width: 350px)
-{ 
+/* Media Queries */
+@media only screen and (max-width: 350px) {
     form {
         width: 90%;
     }
 }
 
-/* (600px para baixo) */
-@media only screen and (max-width: 600px)
-{
+@media only screen and (max-width: 600px) {
     form {
         width: 90%;
     }
 }
-
