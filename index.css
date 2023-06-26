@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
     transition: 0.5s;
 
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
 }
 
 body {
@@ -24,6 +24,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: -webkit-fill-available;
 
     background: rgb(254,255,227);
     background: linear-gradient(135deg, rgba(254,255,227,1) 0%, rgba(226,226,255,1) 100%);
@@ -110,11 +112,15 @@ button:active {
 .entrar {
     background-color: #cacafc;
     color: black;
+    font-size: 1em;
+    font-style: none;
 }
 
 .registrar {
     background-color: #faecd2;
     color: black;
+    font-size: 1em;
+    font-style: none;
 }
 
 .botao:hover {
