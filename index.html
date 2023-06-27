@@ -16,25 +16,29 @@
 
         <div class="campos">
             <label for="email">Usuário</label>
-            <input type="email" name="email" placeholder="exemplo@email.com">
+            <input type="email" name="email" id="email" onchange="validateFields()" placeholder="exemplo@email.com">
         </div>
 
         <div class="campos">
             <label for="password">Senha</label>
-            <input type="password" name="password" placeholder="1234">
+            <input type="password" name="password" id="password" onchange="validateFields()" placeholder="1234">
 
             <div class="esqueceu">
-                <button class="esqueceu_botao" type="button">Esqueceu a senha</button>
+                <button class="esqueceu_botao" type="button" id="recover-password-button" disabled="true">Esqueceu a
+                    senha</button>
             </div>
         </div>
 
         <div class="campo_botoes">
-            <button class="botao registrar" type="button">Registrar</button>
-            <button class="botao entrar" type="submit">Entrar</button>
+            <button class="botao registrar" type="button" onclick="registrar()">Registrar</button>
+
+            <button class="botao entrar" id="login-button" type="submit" disabled="true" onclick="login()">Entrar</button>
+
         </div>
     </form>
+
+    <script src="index.js"></script>
+
 </body>
-
-
 
 </html>

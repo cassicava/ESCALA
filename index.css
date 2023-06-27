@@ -7,6 +7,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
+
+    transition: 0.2s;
 }
 
 body {
@@ -17,6 +19,8 @@ body {
     align-items: center;
     background: linear-gradient(135deg, rgba(254, 255, 227, 1) 0%, rgba(226, 226, 255, 1) 100%);
 }
+
+/* -------------------------------------- */
 
 form {
     width: 40%;
@@ -52,12 +56,25 @@ input {
     outline: none;
 }
 
+/* -------------------------------------- */
+
+
 button {
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:active {
     opacity: 0.8;
+}
+
+button:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.botao:enabled:hover {
+    border: 2px solid black;
 }
 
 .campo_botoes {
@@ -65,6 +82,8 @@ button:active {
     justify-content: center;
     padding: 10px;
 }
+
+/* -------------------------------------- */
 
 .botao {
     width: 100%;
@@ -88,10 +107,6 @@ button:active {
     font-size: 1em;
 }
 
-.botao:hover {
-    border: 2px solid black;
-}
-
 .esqueceu {
     display: flex;
     justify-content: flex-end;
@@ -105,9 +120,11 @@ button:active {
     font-size: 1em;
 }
 
-.esqueceu_botao:hover{
+.esqueceu_botao:hover {
     text-decoration: underline;
 }
+
+/* -------------------------------------- */
 
 /* Media Queries */
 @media only screen and (max-width: 350px) {
